@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.header-text1{
+    font-size: 45px;
+    font-weight: bold;
+    color: #000;
+    padding-left: 40px;
+}
+.header-text2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+.header-text3{
+    width: 400px;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #000;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    position: relative;
+    margin: 0 150px;
+    margin-top: 120px;
+}
+.item{
+    margin-bottom: 40px;
+}
+
+.item2{
+    position: relative;
+    margin-top: 150px;
+}
+.item5{
+    position: relative;
+    top: 200px;
+}
+.designation{
+    writing-mode: vertical-rl;
+}
+.image{
+    display: flex;
+}
+.photo{
+    width: 300px;
+    height: 500px;
+}
+.name{
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+footer{
+    margin-top: 280px;
+    margin-bottom: 30px;
+}
+footer .copy{
+    font-weight: 500px;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    header{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .header-text1{
+        padding-left: 0;
+    }
+    .header-text2{
+        margin-top: 20px;
+    }
+    .main-container{
+        grid-template-columns: repeat(2, 230px);
+        justify-content: center;
+        padding-left: 10px;
+    }
+    .photo{
+        width: 200px;
+    }
+}   
